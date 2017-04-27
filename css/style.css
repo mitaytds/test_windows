@@ -1,3 +1,4 @@
+/*base*/
 body{
 	position: relative;
 	width: auto;
@@ -9,10 +10,15 @@ body{
 	padding: 0;
 }
 header{
+	position: relative;
 	width: 1145px;
 	height: 214px;
 	background: #ffffff;
 	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	width: auto;
 }
 section{
 	width: 1145px;
@@ -52,3 +58,28 @@ button{
 	background: #eb5825;
 	border-radius: 5px;
 }
+/*project*/
+.header_text{
+	position: absolute;
+	top: 74px;
+	right: 25px;
+	text-align: right;
+	margin: 0;
+}
+.header_text p{
+	margin: 0;
+}
+.header_text p:nth-child(2){
+	font-size: 31px;
+}
+.header_price{
+	position: absolute;
+	display: inline-block;
+	bottom: 93px;
+	right: 365px;
+}
+.header_navigation ul{
+	position: absolute;
+	bottom: 0;
+}
+/*cosmetic*/
