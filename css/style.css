@@ -9,32 +9,6 @@ body{
 	margin: 0;
 	padding: 0;
 }
-header{
-	position: relative;
-	width: 1145px;
-	height: 214px;
-	background: #ffffff;
-	margin: 0 auto;
-}
-nav{
-	height: 60px;
-	width: auto;
-}
-section{
-	width: 1145px;
-	margin: 0 auto;
-}
-aside{
-	width: 240px;
-	background: #ffffff;
-}
-article{
-	width: 878px;
-	background: #ffffff;
-}
-footer{
-	background: #a5b7c1;
-}
 h1{
 	font-size: 64px;
 	margin: 50px 0 0 0;
@@ -61,6 +35,36 @@ li{
 button{
 	background: #eb5825;
 	border-radius: 5px;
+}
+/*fundation*/
+header{
+	position: relative;
+	width: 1145px;
+	height: 214px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	width: auto;
+}
+section{
+	width: 1145px;
+	margin: 0 auto;
+}
+aside{
+	width: 240px;
+	background: #ffffff;
+}
+article{
+	width: 878px;
+	background: #ffffff;
+}
+.reviews-block{
+	width: 1145px;
+}
+footer{
+	background: #a5b7c1;
 }
 /*project*/
 .logo{
@@ -102,5 +106,8 @@ button{
 	color: #000000;
 	text-decoration: none;
 	padding: 10px 57px;
+}
+section .title1{
+	margin: 50px 0 0 0;
 }
 /*cosmetic*/
