@@ -120,5 +120,13 @@ section .title1{
 section .title2{
 	margin: 0 0 35px 0;
 }
-aside ul
+aside h3{
+	margin: 25px 0 25px 25px;
+}
+aside ul{
+	margin: 0 25px 0 30px;
+}
+aside li{
+	margin: 0 0 20px 0;
+}
 /*cosmetic*/
