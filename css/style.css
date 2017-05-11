@@ -34,8 +34,12 @@ li{
 	display: inline-block;
 }
 button{
+	height: 40px;
+	color: #ffffff;
 	background: #eb5825;
+	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
 /*fundation*/
 header{
@@ -131,9 +135,51 @@ aside ul{
 aside li{
 	margin: 0 0 16px 0;
 }
- article:nth-child(2){
+ #block_sample{
+ 	float: left;
+ 	width: 355px;
 	text-align: center;
-	margin: 0 0 0 25px;
-	border: 1px dashed green;
+	margin: 0 0 17px 25px;
+}
+article>ul{
+	list-style: disc;
+	margin: 0 0 40px 380px;
+}
+article li{
+	display: list-item;
+	margin: 0 0 14px 20px;
+	color: #eb5825;
+}
+article div ul:nth-child(2){
+margin: 0 0 30px 0;
+}
+.samples{
+	display: inline-block;
+	width: 59px;
+	height: 59px;
+	margin: 0;
+	border-radius: 3px;
+}
+article div ul:nth-child(3){
+
+}
+article div li{
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	margin: 0;
+}
+article div p{
+	color: #000000;
+	margin: 20px 0 30px 0;
+}
+article button{
+	width: 311px;
+}
+article a{
+	margin: 10px 0 70px 380px;
 }
 /*cosmetic*/
+article li span{
+	color: #000000;
+}
