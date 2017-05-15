@@ -16,7 +16,7 @@ h1{
 h2{
 	font-size: 26px;
 	margin: 0;
-	padding: 25px 0 25px 25px;
+	padding: 26px 0 26px 25px;
 }
 h3{
 	font-size: 20px;
@@ -63,68 +63,62 @@ aside{
 	width: 240px;
 	background: #ffffff;
 	border-radius: 5px;
+	margin: 25px 0 0 0; 
 }
 article{
 	width: 878px;
 	background: #ffffff;
 	border-radius: 5px;
 	margin: 25px 0 0 267px;
-}
-.reviews-block{
-	width: 878px;
-	border-radius: 5px;
-	margin: 25px 0 0 267px;
+	padding: 0 0 40px 0;
 }
 footer{
+	margin: 25px 0 0 0;
 	background: #a5b7c1;
 }
 /*project*/
-.logo{
+header img:nth-of-type(1){
 	margin: 15px 0 0 25px;
 }
-.header_text{
+header div{
 	position: absolute;
 	top: 74px;
 	right: 25px;
 	text-align: right;
 	margin: 0;
 }
-.header_text p{
+header p{
 	margin: 0;
 }
-.header_text p:nth-child(2){
+header p:nth-child(2){
 	font-size: 31px;
 }
-.header_price{
+header span{
 	position: absolute;
 	display: inline-block;
 	bottom: 93px;
 	right: 365px;
 }
-.header_navigation ul{
+nav ul{
 	position: absolute;
 	bottom: 0;
 	text-align: center;
 }
-.header_navigation li{
+nav li{
 	display: inline-block;
 	border-left: 1px solid #5f6973;
 	margin-right: -4px;
 	padding: 0;
 }
-.header_navigation a{
+nav a{
 	display: block;
 	font-size: 24px;
 	color: #000000;
 	text-decoration: none;
 	padding: 10px 57px;
 }
-section .title1{
+section h1{
 	margin: 50px 0 0 0;
-}
-section .title2{
-	margin: 0 0 35px 0;
-	padding: 0;
 }
 aside h3{
 	margin: 25px 0 25px 25px;
@@ -135,7 +129,6 @@ aside ul{
 aside li{
 	margin: 0 0 16px 0;
 }
-/*--article1--*/
  #block_sample{
  	float: left;
  	width: 355px;
@@ -161,28 +154,45 @@ margin: 0 0 30px 0;
 	margin: 0;
 	border-radius: 3px;
 }
-article div ul:nth-child(3){
-
-}
 article div li{
 	display: inline-block;
 	width: 100px;
 	vertical-align: top;
 	margin: 0;
 }
-
-article button{
-	width: 311px;
-}
 article a{ 
 	display: inline-block;
-	margin: 10px 0 70px 380px;
+	margin: 10px 0 30px 380px;
 }
 article div img:nth-child(n+2){
 	float: left;
 	margin: 0 35px 0 25px;
 }
+section >div{
+	position: relative;
+	width: 878px;
+	margin: 25px 0 0 267px;
+}
+section>div a{
+	position: absolute;
+	right: 25px;
+	bottom: 0px;
+}
+form{
+	display: inline-block;
+	margin: 0 0 0 25px;
+	padding: 40px 0 0 0; 
+}
+fieldset{
+	width: 80px;
+	height: 15px;
+	border: none;
+}
+fieldset input{
+	border: none;
+}
 /*cosmetic*/
-article li span{
-	color: #000000;
+section>div h2,
+section>h2{
+	padding: 0;
 }
