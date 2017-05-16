@@ -180,19 +180,58 @@ section>div a{
 }
 form{
 	display: inline-block;
+	position: relative;
 	margin: 0 0 0 25px;
 	padding: 40px 0 0 0; 
 }
 fieldset{
-	width: 80px;
-	height: 15px;
+	float: left;
 	border: none;
 }
-fieldset input{
-	border: none;
+fieldset:not(:checked)>input{
+	position:absolute;
+	top:-9999px;
+	clip:rect(0,0,0,0);
+}
+fieldset:not(:checked)>label{
+	float:right;
+	width: 1em;
+	padding: 0.1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 200%;
+	list-style: 1.2;
+	color: pink;
+}
+fieldset:not(:checked)>label:before{
+	content: '★ ';
+}
+fieldset>input:checked~label{
+	color: yellow;
+}
+fieldset:not(:checked)>label:hover,
+fieldset:not(:checked)>label:hover~label{
+	color: red;
+}
+fieldset>input:checked+label:hover,
+fieldset>input:checked+label:hover~label,
+fieldset>input:checked~label:hover,
+fieldset>input:checked~label:hover~hover,
+fieldset>label:hover~input:checked~label{
+	color: green;
+}
+fieldset>label:active{
+	position: relative;
+	top: 0px;
+	left: 2px;
 }
 /*cosmetic*/
 section>div h2,
 section>h2{
 	padding: 0;
 }
+
+/*fieldset input{
+	border: none;
+}*/
