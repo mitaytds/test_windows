@@ -185,53 +185,42 @@ form{
 	padding: 40px 0 0 0; 
 }
 fieldset{
-	float: left;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 	border: none;
 }
 fieldset:not(:checked)>input{
-	position:absolute;
+	position: fixed;
 	top:-9999px;
 	clip:rect(0,0,0,0);
 }
 fieldset:not(:checked)>label{
 	float:right;
-	width: 1em;
-	padding: 0.1em;
+	width: 0.9em;
 	overflow: hidden;
 	white-space: nowrap;
 	cursor: pointer;
 	font-size: 200%;
-	list-style: 1.2;
-	color: pink;
+	color: #bebebe;
+	padding: 0;
 }
 fieldset:not(:checked)>label:before{
-	content: '★ ';
+	content: '★';
 }
-fieldset>input:checked~label{
-	color: yellow;
+fieldset>input:focus~label{
+	color: #f7cd07!important;
 }
-fieldset:not(:checked)>label:hover,
-fieldset:not(:checked)>label:hover~label{
-	color: red;
+fieldset:not(:active)>label:hover,
+fieldset:not(:active)>label:hover~label{
+	color: #ef8925;
 }
-fieldset>input:checked+label:hover,
-fieldset>input:checked+label:hover~label,
-fieldset>input:checked~label:hover,
-fieldset>input:checked~label:hover~hover,
-fieldset>label:hover~input:checked~label{
-	color: green;
-}
-fieldset>label:active{
-	position: relative;
-	top: 0px;
-	left: 2px;
+footer>div{
+	width: 1145px;
+	margin: 0 auto;
 }
 /*cosmetic*/
 section>div h2,
 section>h2{
 	padding: 0;
 }
-
-/*fieldset input{
-	border: none;
-}*/
