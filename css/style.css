@@ -75,6 +75,9 @@ article{
 footer{
 	margin: 25px 0 0 0;
 	background: #a5b7c1;
+	border-top: 15px solid transparent;
+	border-image: linear-gradient(to top, transparent 0%, #85939b 100%);
+	border-image-slice: 300;
 }
 /*project*/
 header img:nth-of-type(1){
