@@ -1,4 +1,4 @@
-/*base*/
+/*fundation*/
 body{
 	position: relative;
 	width: auto;
@@ -8,6 +8,44 @@ body{
 	background: #e1f0f8;
 	margin: 0;
 	padding: 0;
+}
+header{
+	position: relative;
+	width: 1145px;
+	height: 214px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	width: auto;
+}
+section{
+	position: relative;
+	width: 1145px;
+	margin: 0 auto;
+}
+aside{
+	float: left;
+	width: 240px;
+	background: #ffffff;
+	border-radius: 5px;
+	margin: 25px 0 0 0; 
+}
+article{
+	width: 878px;
+	background: #ffffff;
+	border-radius: 5px;
+	margin: 25px 0 0 267px;
+	padding: 0 0 40px 0;
+}
+footer{
+	height: 232px;
+	margin: 25px 0 0 0;
+	background: #a5b7c1;
+	border-top: 15px solid transparent;
+	border-image: linear-gradient(to top, transparent 0%, #85939b 100%);
+	border-image-slice: 300;
 }
 h1{
 	font-size: 64px;
@@ -41,43 +79,17 @@ button{
 	border-radius: 5px;
 	cursor: pointer;
 }
-/*fundation*/
-header{
+form{
+	display: inline-block;
 	position: relative;
-	width: 1145px;
-	height: 214px;
-	background: #ffffff;
-	margin: 0 auto;
+	margin: 0 0 0 25px;
+	padding: 40px 0 0 0; 
 }
-nav{
-	height: 60px;
-	width: auto;
-}
-section{
-	position: relative;
-	width: 1145px;
-	margin: 0 auto;
-}
-aside{
-	float: left;
-	width: 240px;
-	background: #ffffff;
-	border-radius: 5px;
-	margin: 25px 0 0 0; 
-}
-article{
-	width: 878px;
-	background: #ffffff;
-	border-radius: 5px;
-	margin: 25px 0 0 267px;
-	padding: 0 0 40px 0;
-}
-footer{
-	margin: 25px 0 0 0;
-	background: #a5b7c1;
-	border-top: 15px solid transparent;
-	border-image: linear-gradient(to top, transparent 0%, #85939b 100%);
-	border-image-slice: 300;
+fieldset{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 /*project*/
 header img:nth-of-type(1){
@@ -90,16 +102,18 @@ header div{
 	text-align: right;
 	margin: 0;
 }
-header p{
+header p,
+footer p:nth-of-type(2){
 	margin: 0;
 }
-header p:nth-child(2){
+header span,
+footer span{
 	font-size: 31px;
 }
-header span{
+header>span:nth-of-type(1){
 	position: absolute;
 	display: inline-block;
-	bottom: 93px;
+	bottom: 90px;
 	right: 365px;
 }
 nav ul{
@@ -147,6 +161,9 @@ article li{
 	margin: 0 0 14px 20px;
 	color: #eb5825;
 }
+article span{
+
+}
 article div ul:nth-child(2){
 margin: 0 0 30px 0;
 }
@@ -181,18 +198,6 @@ section>div a{
 	right: 25px;
 	bottom: 0px;
 }
-form{
-	display: inline-block;
-	position: relative;
-	margin: 0 0 0 25px;
-	padding: 40px 0 0 0; 
-}
-fieldset{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	border: none;
-}
 fieldset:not(:checked)>input{
 	position: fixed;
 	top:-9999px;
@@ -222,6 +227,14 @@ footer>div{
 	width: 1145px;
 	margin: 0 auto;
 }
+footer ul{
+	position: inherit;
+	margin: 30px 0 50px 0;
+}
+footer p{
+	margin: 50px 0 0 0;
+}
+
 /*cosmetic*/
 section>div h2,
 section>h2{
