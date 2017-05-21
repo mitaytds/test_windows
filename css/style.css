@@ -160,9 +160,6 @@ article li{
 	margin: 0 0 14px 20px;
 	color: #eb5825;
 }
-article span{
-
-}
 article div ul:nth-child(2){
 margin: 0 0 30px 0;
 }
@@ -179,7 +176,8 @@ article div li{
 	vertical-align: top;
 	margin: 0;
 }
-article a{ 
+article a{
+	text-decoration: none;
 	display: inline-block;
 	margin: 10px 0 30px 380px;
 }
@@ -222,6 +220,32 @@ fieldset:not(:active)>label:hover,
 fieldset:not(:active)>label:hover~label{
 	color: #ef8925;
 }
+article form a{
+	display: block;
+	margin: 0 0 0 80px;
+}
+form button{
+	width: 163px;
+	margin: 40px 30px 0 0;
+}
+form>button:nth-of-type(2){
+	width: 137px;
+	height: 18px;
+	vertical-align: middle;
+	background: #5f83aa;
+	border-radius: 2px;
+	margin: 0;
+}
+form button span{
+	color: #aec1d4;
+	padding: 0 0 0 10px;
+}
+form>label{
+	background-image: url('../images/counter.jpg');
+	vertical-align: middle;
+	padding: 2px 6px 0 8px;
+
+}
 footer>div{
 	width: 1145px;
 	margin: 0 auto;
@@ -238,4 +262,11 @@ footer p{
 section>div h2,
 section>h2{
 	padding: 0;
+}
+form a span{
+	border-bottom: 1px dashed #eb5825;
+}
+form img{
+	margin: 5px 5px 0 0;
+	padding: 5px 0 0 0;
 }
