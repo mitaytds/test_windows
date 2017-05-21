@@ -176,6 +176,29 @@ article div li{
 	vertical-align: top;
 	margin: 0;
 }
+.popup{
+	display: none;
+}
+.overlay{
+	background: #000000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	opacity: 0.7;
+}
+.visible{
+	background: #ffffff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -200px 0 0 -250px;
+	overflow: hidden;
+	z-index: 2000;
+	width: 500px;
+}
 article a{
 	text-decoration: none;
 	display: inline-block;

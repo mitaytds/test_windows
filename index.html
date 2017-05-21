@@ -77,13 +77,19 @@
 						<p>действует<br><span>с 15 по 20</span><br>февраля</p>
 					</li>
 				</ul>
-					<button href="#modal_window">Рассчитать со скидкой 70%</button>
+					<button onClick="getElementById('popup').removeAttribute('style');" type="button">Рассчитать со скидкой 70%</button>
 					<a href="#">или отправить заявку и получить консультацию</a>
 			</div>
 		</article>
-		<div id="modal_window">
-			<div></div>
+		<!--start modal window-->
+		<div class="popup">
+			<div class="overlay"></div>
+			<div class="visible">
+				<p>скидка</p>
+				<a href="">close</a>
+			</div>
 		</div>
+		<!--end modal window-->
 		<article>
 			<div>
 				<h2>Зачем использовать ламинацию</h2>
