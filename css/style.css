@@ -61,7 +61,7 @@ h3{
 }
 a{
 	color: #eb5825;
-	font-size: 16px;
+	font-size: 16px; 
 }
 ul{
 	list-style: none;
@@ -174,20 +174,23 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]+label{
 	display: inline-block;
+	position: relative;
 	background-image: url('../images/samples.png');
 	width: 59px;
 	height: 59px;
 	cursor: pointer;
 
 }
-input[type=checkbox]:checked + label:before {
-	content: "\2713";
+input[type=checkbox]:checked + label:before{
+	content: '✅';
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font-size: 60px;
 	color: #f3f3f3;
-	vertical-align: top;
-
-
+	position: absolute;
+	top: -10px;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 li:nth-child(1) input[type="checkbox"]+label{
@@ -261,7 +264,7 @@ article div li{
 	top: 0;
 	right: 0;
 	width: 20px;
-	height: 19px;
+	height: 20px;
 	color: #ffffff;
 	background: #eb5825;
 	text-align: center;
@@ -341,7 +344,6 @@ form>label{
 	background-image: url('../images/counter.jpg');
 	vertical-align: middle;
 	padding: 2px 6px 0 8px;
-
 }
 footer>div{
 	width: 1145px;
@@ -356,6 +358,10 @@ footer p{
 }
 
 /*cosmetic*/
+header nav a footer nav a:focus,
+nav>a:nth-child(2):focus{
+	background: lightblue;
+}
 section>div h2,
 section>h2{
 	padding: 0;
