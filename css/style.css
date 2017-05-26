@@ -172,13 +172,24 @@ margin: 0 0 30px 0;
 input[type="checkbox"]{
 	display: none;
 }
-input[type="checkbox"]~label{
+input[type="checkbox"]+label{
 	display: inline-block;
 	background-image: url('../images/samples.png');
 	width: 59px;
 	height: 59px;
-	border-radius: 3px;
+	cursor: pointer;
+
 }
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 60px;
+	color: #f3f3f3;
+	vertical-align: top;
+
+
+}
+
 li:nth-child(1) input[type="checkbox"]+label{
 	background-position: -70px 0px;
 }
@@ -186,10 +197,10 @@ li:nth-child(2) input[type="checkbox"]+label{
 	background-position: -345px 0px;
 }
 li:nth-child(3) input[type="checkbox"]+label{
-	background-position: -139px 0px;
+	background-position: -138px 0px;
 }
 li:nth-child(4) input[type="checkbox"]+label{
-	background-position: -209px 0px;
+	background-position: -207px 0px;
 }
 li:nth-child(5) input[type="checkbox"]+label{
 	background-position: -276px 0px;
