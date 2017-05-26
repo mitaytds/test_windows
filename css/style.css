@@ -358,10 +358,16 @@ footer p{
 }
 
 /*cosmetic*/
-header nav a footer nav a:focus,
-nav>a:nth-child(2):focus{
+header nav a:not(:checked):focus,
+footer nav a:not(:checked):focus{
 	background: lightblue;
+	color: white;
 }
+header nav a:hover,
+footer nav a:hover{
+	color: #eb5825;
+}
+
 section>div h2,
 section>h2{
 	padding: 0;
