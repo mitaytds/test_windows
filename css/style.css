@@ -184,11 +184,11 @@ input[type="checkbox"]+label{
 input[type=checkbox]:checked + label:before{
 	content: '✅';
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	font-size: 60px;
+	font-size: 46px;
 	color: #f3f3f3;
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -4px;
+	left: 7px;
 	bottom: 0;
 	right: 0;
 }
@@ -314,7 +314,7 @@ fieldset:not(:checked)>label:before{
 	content: '★';
 }
 fieldset>input:focus~label{
-	color: #f7cd07!important;
+	color: #f7cd07;
 }
 fieldset:not(:active)>label:hover,
 fieldset:not(:active)>label:hover~label{
