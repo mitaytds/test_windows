@@ -11,7 +11,7 @@ body{
 }
 header{
 	position: relative;
-	width: 1145px;
+	width: 1143px;
 	height: 214px;
 	background: #ffffff;
 	margin: 0 auto;
@@ -22,7 +22,7 @@ nav{
 }
 section{
 	position: relative;
-	width: 1145px;
+	width: 1143px;
 	margin: 0 auto;
 }
 aside{
@@ -157,7 +157,7 @@ article>ul{
 }
 article li{
 	display: list-item;
-	margin: 0 0 14px 20px;
+	margin: 0 0 14px 0;
 	color: #eb5825;
 }
 article div ul:nth-child(2){
@@ -181,7 +181,7 @@ input[type="checkbox"]+label{
 	cursor: pointer;
 
 }
-input[type=checkbox]:checked + label:before{
+input[type=checkbox]:checked+label:before{
 	content: '✅';
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font-size: 46px;
@@ -285,7 +285,7 @@ article div img:nth-child(n+2){
 	float: left;
 	margin: 0 15px 0 0;
 }
-section >div{
+section>div{
 	position: relative;
 	width: 878px;
 	margin: 25px 0 0 267px;
@@ -346,7 +346,7 @@ form>label{
 	padding: 2px 6px 0 8px;
 }
 footer>div{
-	width: 1145px;
+	width: 1143px;
 	margin: 0 auto;
 }
 footer ul{
@@ -358,19 +358,28 @@ footer p{
 }
 
 /*cosmetic*/
-header nav a:not(:checked):focus,
-footer nav a:not(:checked):focus{
-	background: lightblue;
-	color: white;
+	/*--link in header--*/
+header a{
+	font-size: 24px;
 }
-header nav a:hover,
-footer nav a:hover{
+	/*--menu--*/
+nav li:nth-of-type(1){
+	border-left: none;
+}
+nav a:not(:checked):focus{
+	background: #7bc3d5;
+	color: #ffffff;
+}
+nav a:hover{
 	color: #eb5825;
 }
-
+	/*--title h2 correction--*/ 
 section>div h2,
 section>h2{
 	padding: 0;
+}
+article li span{
+	color: #000000;
 }
 form a span{
 	border-bottom: 1px dashed #eb5825;
