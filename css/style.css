@@ -78,6 +78,7 @@ button{
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin: 0 0 14px 0;
 }
 form{
 	display: inline-block;
@@ -153,7 +154,7 @@ aside li{
 }
 article>ul{
 	list-style: disc;
-	margin: 0 0 40px 380px;
+	margin: 0 0 40px 393px;
 }
 article li{
 	display: list-item;
@@ -217,8 +218,10 @@ li:nth-child(7) input[type="checkbox"]+label{
 article div li{
 	display: inline-block;
 	width: 100px;
+	height: 60px;
+	box-shadow: 1px 0 #aeaeae; 
 	vertical-align: top;
-	margin: 0;
+	margin: 25px 0 26px 0;
 }
 .popup:before{
 	content: "";
@@ -278,12 +281,16 @@ article div li{
 }
 article a{
 	text-decoration: none;
-	display: inline-block;
-	margin: 10px 0 30px 380px;
+	display: inline;
+	color: #aeaeae;
+	margin: 0 0 30px 380px;
 }
 article div img:nth-child(n+2){
 	float: left;
-	margin: 0 15px 0 0;
+	margin: 7px 15px -4px 0;
+}
+article div p:nth-child(n+2){
+	line-height: 18px;
 }
 section>div{
 	position: relative;
@@ -362,7 +369,7 @@ footer p{
 header a{
 	font-size: 24px;
 }
-	/*--menu--*/
+	/*--block menu navigation--*/
 nav li:nth-of-type(1){
 	border-left: none;
 }
@@ -378,10 +385,52 @@ section>div h2,
 section>h2{
 	padding: 0;
 }
+	/*--aside----*/
+aside li a{
+	color: #aeaeae;
+}
+aside li a:hover{
+	color: #eb5825;
+}
+	/*--windows options menu--*/
 article li span{
 	color: #000000;
 }
+	/*--block_sample--*/
+#block_sample p{
+	color: #aeaeae;
+	font-size: 18px; 
+}
+	/*--price block--*/
+article div li p{
+	color: #000000;
+	vertical-align: top;
+	margin: 0;
+}
+article div li:nth-of-type(1){
+	font-weight: bold; 
+}
+article div li span{
+	font-weight: bold;
+	color: #eb5825;
+}
+article ol li:nth-child(1)>p span{
+	border-bottom: 1px dashed #eb5825;
+}
+article div ol li:nth-of-type(2){
+	width: 50px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+article div ol li:nth-of-type(3){
+	box-shadow: none;
+	padding: 0 0 0 10px;
+}
+
+
+
 form a span{
+	color: #eb5825;
 	border-bottom: 1px dashed #eb5825;
 }
 form img{
