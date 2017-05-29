@@ -193,28 +193,6 @@ input[type=checkbox]:checked+label:before{
 	bottom: 0;
 	right: 0;
 }
-
-li:nth-child(1) input[type="checkbox"]+label{
-	background-position: -70px 0px;
-}
-li:nth-child(2) input[type="checkbox"]+label{
-	background-position: -345px 0px;
-}
-li:nth-child(3) input[type="checkbox"]+label{
-	background-position: -138px 0px;
-}
-li:nth-child(4) input[type="checkbox"]+label{
-	background-position: -207px 0px;
-}
-li:nth-child(5) input[type="checkbox"]+label{
-	background-position: -276px 0px;
-}
-li:nth-child(6) input[type="checkbox"]+label{
-	background-position: -345px 0px;
-}
-li:nth-child(7) input[type="checkbox"]+label{
-	background-position: -413px 0px;
-}
 article div li{
 	display: inline-block;
 	width: 100px;
@@ -373,12 +351,12 @@ header a{
 nav li:nth-of-type(1){
 	border-left: none;
 }
-nav a:not(:checked):focus{
-	background: #7bc3d5;
-	color: #ffffff;
-}
 nav a:hover{
 	color: #eb5825;
+}
+nav ul li:nth-of-type(2)>a{
+	background: #7bc3d5;
+	color: #ffffff;	
 }
 	/*--title h2 correction--*/ 
 section>div h2,
@@ -396,6 +374,7 @@ aside li a:hover{
 article li span{
 	color: #000000;
 }
+
 	/*--block_sample--*/
 #block_sample p{
 	color: #aeaeae;
@@ -426,7 +405,28 @@ article div ol li:nth-of-type(3){
 	box-shadow: none;
 	padding: 0 0 0 10px;
 }
-
+	/*--block samples--*/
+li:nth-child(1) input[type="checkbox"]+label{
+	background-position: -70px 0px;
+}
+li:nth-child(2) input[type="checkbox"]+label{
+	background-position: -345px 0px;
+}
+li:nth-child(3) input[type="checkbox"]+label{
+	background-position: -138px 0px;
+}
+li:nth-child(4) input[type="checkbox"]+label{
+	background-position: -207px 0px;
+}
+li:nth-child(5) input[type="checkbox"]+label{
+	background-position: -276px 0px;
+}
+li:nth-child(6) input[type="checkbox"]+label{
+	background-position: -345px 0px;
+}
+li:nth-child(7) input[type="checkbox"]+label{
+	background-position: -413px 0px;
+}
 
 
 form a span{
@@ -436,4 +436,7 @@ form a span{
 form img{
 	margin: 5px 5px 0 0;
 	padding: 5px 0 0 0;
+}
+article:nth-of-type(2) div:nth-child(2) p:nth-of-type(1){
+	color: red;
 }
