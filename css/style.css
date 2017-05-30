@@ -30,7 +30,7 @@ aside{
 	width: 240px;
 	background: #ffffff;
 	border-radius: 5px;
-	margin: 25px 0 0 0; 
+	margin: 25px 0 0 0;
 }
 article{
 	width: 827px;
@@ -61,7 +61,7 @@ h3{
 }
 a{
 	color: #eb5825;
-	font-size: 16px; 
+	font-size: 16px;
 }
 ul{
 	list-style: none;
@@ -83,7 +83,7 @@ button{
 form{
 	display: inline-block;
 	position: relative;
-	padding: 40px 0 0 0; 
+	padding: 40px 0 0 0;
 }
 fieldset{
 	display: inline-block;
@@ -146,9 +146,9 @@ aside ul{
 aside li{
 	margin: 0 0 16px 0;
 }
- #block_sample{
- 	float: left;
- 	width: 355px;
+#block_sample{
+	float: left;
+	width: 355px;
 	text-align: center;
 	margin: 0 0 0 25px;
 }
@@ -197,7 +197,7 @@ article div li{
 	display: inline-block;
 	width: 100px;
 	height: 60px;
-	box-shadow: 1px 0 #aeaeae; 
+	box-shadow: 1px 0 #aeaeae;
 	vertical-align: top;
 	margin: 25px 0 26px 0;
 }
@@ -240,17 +240,12 @@ article div li{
 	transform: translate(0, 0);
 	top: 20%;
 }
-.btn{
+.btn img{
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 20px;
+	top: -450px;
+	right: -550px;
+	max-width: 20px;
 	height: 20px;
-	color: #ffffff;
-	background: #eb5825;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 1px;
 }
 #close{
 	display: none;
@@ -358,7 +353,7 @@ nav ul li:nth-of-type(2)>a{
 	background: #7bc3d5;
 	color: #ffffff;	
 }
-	/*--title h2 correction--*/ 
+	/*--title h2 correction--*/
 section>div h2,
 section>h2{
 	padding: 0;
@@ -378,7 +373,7 @@ article li span{
 	/*--block_sample--*/
 #block_sample p{
 	color: #aeaeae;
-	font-size: 18px; 
+	font-size: 18px;
 }
 	/*--price block--*/
 article div li p{
@@ -387,7 +382,7 @@ article div li p{
 	margin: 0;
 }
 article div li:nth-of-type(1){
-	font-weight: bold; 
+	font-weight: bold;
 }
 article div li span{
 	font-weight: bold;
@@ -427,8 +422,22 @@ li:nth-child(6) input[type="checkbox"]+label{
 li:nth-child(7) input[type="checkbox"]+label{
 	background-position: -413px 0px;
 }
-
-
+	/*--block information about windows--*/
+article:nth-of-type(2) div:nth-child(1) p:nth-of-type(1),
+article:nth-of-type(2) div:nth-child(2) p:nth-of-type(1){
+	margin: 5px 0 19px 0;
+}
+article:nth-of-type(2) div:nth-child(2) p:nth-of-type(3){
+	margin: 19px 0 0 0;
+}
+	/*--block reviews--*/
+form p:nth-of-type(1){
+	font-weight: bold;
+}
+form p:nth-of-type(2),
+form p:nth-of-type(3){
+	color: #aeaeae;
+}
 form a span{
 	color: #eb5825;
 	border-bottom: 1px dashed #eb5825;
@@ -436,7 +445,4 @@ form a span{
 form img{
 	margin: 5px 5px 0 0;
 	padding: 5px 0 0 0;
-}
-article:nth-of-type(2) div:nth-child(2) p:nth-of-type(1){
-	color: red;
 }
