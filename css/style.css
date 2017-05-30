@@ -244,8 +244,8 @@ article div li{
 	position: absolute;
 	top: -450px;
 	right: -550px;
-	max-width: 20px;
-	height: 20px;
+	max-width: 15px;
+	height: 15px;
 }
 #close{
 	display: none;
