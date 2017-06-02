@@ -40,6 +40,7 @@ article{
 	padding: 0 25px 40px 25px;
 }
 footer{
+	min-width: 1143px;
 	height: 232px;
 	margin: 25px 0 0 0;
 	background: #a5b7c1;
